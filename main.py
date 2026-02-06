@@ -26,14 +26,7 @@ language_preferee = ""
 
 
 class RecommandationFilm(KnowledgeEngine):
-    @Rule(
-        PreferenceUtilisateur(
-            genre_preferee=MATCH.genre_preferee,
-            note_souhaitee=MATCH.note_souhaitee,
-            language_preferee=MATCH.language_preferee,
-            date_preferee=MATCH.date_preferee,
-        )
-    )
+    
     def recommander_film_utilisateur(
         self,
         genre_preferee,
